@@ -33,10 +33,14 @@
 
 
     body.addEventListener("click", ()=>{
-        audioSay.play();
-        audioMon.play();
-        audioYu.play();
-        audioNat.play();
+        
+        setTimeOut(() =>{
+            audioSay.play();
+            audioMon.play();
+            audioYu.play();
+            audioNat.play();    
+        }, 2000)
+
         
     })
 

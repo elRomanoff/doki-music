@@ -17,7 +17,7 @@ const audioYu = document.getElementById("audio-yu")
 const audioNeutral = document.getElementById("audio-neutral")
 
 yes.addEventListener("click", ()=>{
-    yes.classList.remove()
+    yes.classList.add("hidden")
     yesSound.play()
     audioNeutral.play()
 

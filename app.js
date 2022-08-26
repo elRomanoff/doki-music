@@ -27,35 +27,23 @@ yes.addEventListener("click", ()=>{
     say.classList.remove("hidden")
 })
 
+class Doki {
+    constructor(audio, node){
+        this.audio = audio;
+        this.node = node;
+        this.node.addEventListener("click", ()=>{
+            if(!!this.audio.muted) this.audio.muted = false
+            else this.audio.muted = true;
+            audioNeutral.muted = true;
+            this.audio.play();
+            this.audio.currentTime = audioNeutral.currentTime;
+            this.node.children[0].classList.toggle("hidden");
+            this.node.children[1].classList.toggle("hidden");
+        })
+    }
+}
 
-
-nat.addEventListener("click", ()=>{
-    if (audioNat.muted == true) audioNat.muted = false;
-    else audioNat.muted = true;
-    audioNeutral.muted = true
-    audioNat.play();
-    audioNat.currentTime = audioNeutral.currentTime;
-})
-yu.addEventListener("click", ()=>{
-    if (audioYu.muted == true) audioYu.muted = false;
-    else audioYu.muted = true;
-    audioNeutral.muted = true
-    audioYu.play();
-    audioYu.currentTime = audioNeutral.currentTime;
-});
-
-mon.addEventListener("click", () => {
-    if (audioMon.muted == true) audioMon.muted = false;
-    else audioMon.muted = true;
-    audioNeutral.muted = true
-    audioMon.play();
-    audioMon.currentTime = audioNeutral.currentTime;
-});
-
-say.addEventListener("click", () => {
-    if(audioSay.muted == true) audioSay.muted = false;
-    else audioSay.muted = true;
-    audioNeutral.muted = true
-    audioSay.play();
-    audioSay.currentTime = audioNeutral.currentTime;
-});
+let natsuki = new Doki(audioNat, nat)
+let yuri = new Doki(audioYu, yu);
+let monika = new Doki(audioMon, mon);
+let sayori = new Doki(audioSay, say);

@@ -10,9 +10,9 @@
 </head>
 <body>
 
-    <div id="body" class="w-full fixed">
+    <div id="body" class="w-full">
 
-        <div class="content w-[720px] bg-white m-auto h-auto text-center shadow-2xl pt-10">
+        <div class="content w-[720px] bg-white m-auto text-center shadow-2xl pt-10  h-max">
 
             <div class="header w-full border-b-8 border-sky-200">
                 <h2 class="sayfont text-5xl my-3"> Do you want to hear how heaven might sound like?</h2>
@@ -23,21 +23,28 @@
                 <div class="w-[720px] h-[445.5px] py-5 absolute flex">
                     <div id="yu" class="hidden w-1/4 h-full hover:bg-sky-200/25 flex flex-col justify-end items-center">
                         <img src="img/yu.png" alt="" class="w-2/3">
+                        <img src="img/yu-happy.png" class=" happy w-2/3 hidden" alt="">
                     </div>  
                     <div id="mon" class="hidden w-1/4 h-full hover:bg-sky-200/25 flex flex-col justify-end items-center">
                         <img src="img/mon.webp" alt="" class="w-2/3">
+                        <img src="img/mon-happy.webp" class=" happy w-2/3 hidden" alt="">
                     </div>
                     <div id="say" class="hidden w-1/4 h-full hover:bg-sky-200/25 flex flex-col justify-end items-center">
                         <img src="img/say.png" alt="" class="w-2/3">
+                        <img src="img/say-happy.png" class=" happy w-2/3 hidden" alt="">
                     </div>
                     <div id="nat" class="hidden w-1/4 h-full hover:bg-sky-200/25 flex flex-col justify-end items-center">
                         <img src="img/nat.png" alt="" class="w-2/3">
+                        <img src="img/nat-happy.png" class=" happy w-2/3 hidden" alt="">
                     </div>
                 </div>
 
                 <img src="img/dokis.jpg" alt="" class="py-5">
             </div>
-            <div class="footer py-3 h-10">Developed by El Papu</div>
+            <div class="footer py-3 ">
+                <p>Developed by El Papu</p>  
+                <a href="https://github.com/elRomanoff/doki-music" class="text-blue-800">Link to GitHub</a>
+            </div>
         </div>
 
     </div>
@@ -49,14 +56,6 @@
     <audio id="audio-neutral" src="sound/okay-everyone.mp3" ></audio>
 
 </body>
-
-
-    <!-- <div class="buttons">
-        <button  class="hidden">Sayori</button>
-        <button  class="hidden">Natsuki</button>
-        <button class="hidden">Yuri</button>
-        <button  class="hidden">Monika</button>
-    </div>  -->
 
 
 

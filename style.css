@@ -1,0 +1,26 @@
+  @font-face {
+      font-family: 'doki-bold';
+      src: url('fonts/RifficFree-Bold.ttf') format('truetype');
+      /* font-style: italic; */
+      font-weight: normal;
+  }
+
+  @font-face {
+      font-family: 'sayori';
+      src: url('fonts/s1.ttf') format('truetype');
+      font-style: italic;
+  }
+
+  #body {
+      background-image: url("img/background-dots.png");
+      background-repeat: repeat;
+  }
+
+  .sayfont {
+      font-family: "sayori"
+  }
+
+  .boldfont {
+    font-family: "doki-bold";
+    text-shadow: 3px 3px 1.5px rgb(0, 187, 255);
+  }

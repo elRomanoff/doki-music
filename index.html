@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doki Doki Music</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div id="body" class="w-full">
+
+        <div class="content w-[720px] bg-white m-auto h-auto text-center shadow-2xl pt-10">
+
+            <div class="header w-full border-b-8 border-sky-200">
+                <h2 class="sayfont text-5xl my-3"> Do you want to hear how heaven might sound like?</h2>
+                <button id="yes" class="my-3 boldfont text-6xl text-blue-200 hover:text-pink-300 text-shadow">Yes</button>
+            </div>
+
+            <div class="dokis w-full h-full flex bg-sky-200">
+                <div class="w-[720px] h-[445.5px] py-5 absolute flex">
+                    <div id="yu" class="hidden w-1/4 h-full hover:bg-sky-200/25 flex flex-col justify-end items-center">
+                        <img src="img/yu.png" alt="" class="w-2/3">
+                    </div>  
+                    <div id="mon" class="hidden w-1/4 h-full hover:bg-sky-200/25 flex flex-col justify-end items-center">
+                        <img src="img/mon.webp" alt="" class="w-2/3">
+                    </div>
+                    <div id="say" class="hidden w-1/4 h-full hover:bg-sky-200/25 flex flex-col justify-end items-center">
+                        <img src="img/say.png" alt="" class="w-2/3">
+                    </div>
+                    <div id="nat" class="hidden w-1/4 h-full hover:bg-sky-200/25 flex flex-col justify-end items-center">
+                        <img src="img/nat.png" alt="" class="w-2/3">
+                    </div>
+                </div>
+
+                <img src="img/dokis.jpg" alt="" class="py-5">
+            </div>
+            <div class="footer bg-black text-white py-3 h-10">Developed by El Papu</div>
+        </div>
+
+    </div>
+
+    <audio id="audio-mon" src="sound/okay-everyoneM.mp3" muted></audio>
+    <audio id="audio-say" src="sound/okay-everyoneS.mp3" muted></audio>
+    <audio id="audio-nat" src="sound/okay-everyoneN.mp3" muted></audio>
+    <audio id="audio-yu" src="sound/okay-everyoneY.mp3" muted></audio>
+    <audio id="audio-neutral" src="sound/okay-everyone.mp3" ></audio>
+
+</body>
+
+
+    <!-- <div class="buttons">
+        <button  class="hidden">Sayori</button>
+        <button  class="hidden">Natsuki</button>
+        <button class="hidden">Yuri</button>
+        <button  class="hidden">Monika</button>
+    </div>  -->
+
+
+
+<script src="app.js"></script>
+
+
+</html>

@@ -38,7 +38,12 @@ class Doki {
             this.audio.play();
             this.audio.currentTime = audioNeutral.currentTime;
             this.node.children[0].classList.toggle("hidden");
-            this.node.children[1].classList.toggle("hidden");
+            this.node.children[1].classList.toggle("hidden");      
+            
+            setTimeOut(()=> {
+                if(this.audio.currentTime != audioNeutral.currentTime) this.audio.currentTime = audioNeutral.currentTime;
+            }, 100)
+
         })
     }
 }
